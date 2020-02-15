@@ -5,6 +5,6 @@ from .models import Article
 def view_article(request, id):
     obj = get_object_or_404(Article, id=id)
     return render(request,
-        template_name = 'article.html',
+        template_name = 'article/article.html',
         context={'object': obj}
     )
